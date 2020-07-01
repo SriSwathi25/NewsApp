@@ -1,0 +1,19 @@
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>News</ion-title>
+      </ion-toolbar>
+    </ion-header>,
+    <ion-content fullscreen>
+
+      <ion-card *ngFor = "let article of data?.articles" (click)="onGoToNewsSinglePage(article)">
+        
+        <ion-card-header>
+          
+          <ion-card-title>{{ article.title }}</ion-card-title>
+        </ion-card-header>
+      
+      </ion-card>
+    </ion-content>
+  </ion-app>
+
